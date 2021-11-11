@@ -174,7 +174,20 @@ textarea {
 html {
   box-sizing: border-box;
 }
+.whatevor {
+  /* The image used */
+  background-image: url("/images/Nashvillebanner.jpg");
+  /* Set a specific height */
+  height: 500px;
 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: 2050px auto;
+  top: 0px;
+  left: 0px;
+}
 *,
 *:before,
 *:after {
@@ -2311,6 +2324,10 @@ input[type="radio"] + label:before {
 
 .image.main img {
   border-radius: 0;
+  position: absolute;
+  margin: 0;
+  top: 0px;
+  left: 0px;
 }
 
 /* List */
@@ -3079,12 +3096,6 @@ input[type="button"]:disabled,
 
   .image.main {
     height: 20em;
-    position: fixed;
-  }
-  .image.main img {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   /* Header */
