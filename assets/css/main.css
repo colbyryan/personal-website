@@ -176,7 +176,7 @@ html {
 }
 .whatevor {
   /* The image used */
-  background-image: url("/images/Nashvillebanner.jpg");
+  background-image: url("images/Nashvillebanner.jpg");
   /* Set a specific height */
   height: 500px;
 
