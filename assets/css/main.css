@@ -3079,6 +3079,12 @@ input[type="button"]:disabled,
 
   .image.main {
     height: 20em;
+    position: fixed;
+  }
+  .image.main img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   /* Header */
