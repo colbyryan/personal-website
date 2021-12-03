@@ -2490,7 +2490,13 @@ ul.actions.fit.stacked {
     margin-left: -0.5rem;
   }
 }
-
+/* 
+@media only screen and (min-width: 480px) {
+  ul.feature-icons li img {
+    padding: 2px;
+    height: 20px;
+    width: 20px;
+  } */
 /* Feature Icons */
 ul.feature-icons {
   list-style: none;
@@ -3443,17 +3449,43 @@ input[type="button"]:disabled,
     padding-top: 0;
   }
 
-  ul.feature-icons li {
-    display: block;
-    width: 100%;
+  ul.feature-icons {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-flow: row wrap;
   }
 
-  /* Button */
+  ul.feature-icons li {
+    display: block;
+    width: 25%;
+  }
+  ul.feature-icons li img {
+    padding: 20px;
+    height: 100px;
+    width: 100px;
 
-  input[type="submit"],
-  input[type="reset"],
-  input[type="button"],
-  .button {
-    padding: 0;
+    /* Button */
+
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    .button {
+      padding: 0;
+    }
+  }
+  .whatevor {
+    /* The image used */
+    background-image: url("https://colbyryan.github.io/personal-website/images/Nashvillebanner.jpg");
+    /* Set a specific height */
+    height: 180px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: 780px auto;
+    top: 0px;
+    left: 0px;
   }
 }
